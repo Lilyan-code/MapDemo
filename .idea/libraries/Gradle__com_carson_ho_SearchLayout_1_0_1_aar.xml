@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.carson_ho:SearchLayout:1.0.1@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fb65dcad896bade7b3ad83c83d376099/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/fb65dcad896bade7b3ad83c83d376099/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.carson_ho/SearchLayout/1.0.1/d4f0a33d6798d83a41201106785cf44c8530b2c2/SearchLayout-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

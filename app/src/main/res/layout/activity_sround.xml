@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+    <LinearLayout
+        style="@style/top_nav1">
+        <ImageView
+            android:id="@+id/iv_return"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/fh_btn"
+            android:padding="8dp"/>
+        <EditText
+            android:id="@+id/et_search"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="搜    索"
+            android:textColor="@android:color/darker_gray"
+            android:background="@drawable/btn_bg"
+            android:textSize="18sp"
+            />
+        <ImageView
+            android:id="@+id/iv_btn_search"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ss"
+            android:padding="8dp"
+            />
+    </LinearLayout>
+    <View
+        style="@style/common_line_gray_90"/>
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#BE30E902"
+        app:layout_collapseMode="pin"
+        app:tabIndicatorColor="@color/colorAccent"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="scrollable"
+        app:tabPadding="5dp"
+        app:tabSelectedTextColor="@color/colorAccent"
+        app:tabTextColor="#444444"/>
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.5"
+        android:divider="#c9c9c9"
+        android:dividerHeight="1dp"/>
+
+</LinearLayout>

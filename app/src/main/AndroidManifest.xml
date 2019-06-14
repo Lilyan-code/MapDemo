@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tangwenyan.map">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--允许程序设置内置sd卡的写权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--允许程序获取网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--允许程序访问WiFi网络信息-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--允许程序读写手机状态和身份-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--允许程序访问CellID或WiFi热点来获取粗略的位置-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!--用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>    <!--用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>    <!--用于获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>    <!--用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>    <!--用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>    <!--用于访问网络，网络定位需要上网-->
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>    <!--用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>    <!--用于写入缓存数据到扩展存储卡-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>    <!--用于申请调用A-GPS模块-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"></uses-permission>    <!--用于申请获取蓝牙信息进行室内定位-->
+    <uses-permission android:name="android.permission.BLUETOOTH"></uses-permission>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"></uses-permission>
+    <!--导航-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/mini"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".First" android:label="Mini">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data android:name="com.amap.api.v2.apikey"
+            android:value="94e676980a1ed58517da34611e87597e">
+        </meta-data>
+
+        <!--高德自带离线UI界面-->
+        <activity
+            android:name="com.amap.api.maps.offlinemap.OfflineMapActivity"
+            android:screenOrientation="portrait" />
+
+        <!--自定义离线UI界面-->
+        <activity android:name=".Activity.OfflineMapMyActivity"/>
+
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity android:name=".Activity.WeatherSearchActivity"/>
+
+        <activity android:name=".Activity.BuslineActivity"/>
+
+        <!--<activity android:name="com.amap.api.navi.AmapRouteActivity"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:configChanges="orientation|keyboardHidden|screenSize" />-->
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".Activity.NavigationActivity"/>
+        <activity android:name=".Activity.GPSNaviActivity"/>
+        <activity android:name=".Activity.PiclocationActivity"/>
+        <activity android:name=".Activity.PoiSearchActivity"/>
+        <activity android:name=".Activity.BusRouteDetailActivity"/>
+        <activity android:name=".Activity.RouteActivity"/>
+        <activity android:name=".Activity.DriveRouteDetailActivity"/>
+        <activity android:name=".Activity.WalkRouteDetailActivity"/>
+        <activity android:name=".Activity.PoiSearch"/>
+        <activity android:name=".Activity.SroundActivity"/>
+        <activity android:name=".Activity.Poi_navi"/>
+        <activity android:name=".SubWay.Main"/>
+        <activity android:name=".SubWay.BeiJing"/>
+        <activity android:name=".SubWay.XiaMen"/>
+        <activity android:name=".SubWay.ShangHai"/>
+        <activity android:name=".SubWay.ChangChun"/>
+        <activity android:name=".SubWay.ChangSha"/>
+        <activity android:name=".SubWay.ChengDu"/>
+        <activity android:name=".SubWay.ChongQing"/>
+        <activity android:name=".SubWay.DaLian"/>
+        <activity android:name=".SubWay.DongGuang"/>
+        <activity android:name=".SubWay.FoShan"/>
+        <activity android:name=".SubWay.FuZhou"/>
+        <activity android:name=".SubWay.GuangZhou"/>
+        <activity android:name=".SubWay.GuiYang"/>
+        <activity android:name=".SubWay.HaErBin"/>
+        <activity android:name=".SubWay.HangZhou"/>
+        <activity android:name=".SubWay.HeFei"/>
+        <activity android:name=".SubWay.HongKong"/>
+        <activity android:name=".SubWay.KunMing"/>
+        <activity android:name=".SubWay.NanChang"/>
+        <activity android:name=".SubWay.NanJing"/>
+        <activity android:name=".SubWay.NanNing"/>
+        <activity android:name=".SubWay.NingBo"/>
+        <activity android:name=".SubWay.QingDao"/>
+        <activity android:name=".SubWay.ShengZhen"/>
+        <activity android:name=".SubWay.ShenYang"/>
+        <activity android:name=".SubWay.ShiJiaZhuang"/>
+        <activity android:name=".SubWay.SuZhou"/>
+        <activity android:name=".SubWay.TianJing"/>
+        <activity android:name=".SubWay.WuHan"/>
+        <activity android:name=".SubWay.WuXi"/>
+        <activity android:name=".SubWay.XiAn"/>
+        <activity android:name=".SubWay.ZhengZhou"/>
+
+        <activity android:name=".Login.Change_pwd" />
+        <activity android:name=".Login.Login1" />
+        <activity android:name=".Login.register1" />
+        <activity android:name=".Login.register2" />
+        <activity android:name=".Login.Person_center" />
+        <activity android:name=".Login.changemm" />
+        <activity android:name=".Login.GiveEmail" />
+        <activity android:name=".Activity.SearchActivity"/>
+        <activity android:name=".Activity.location_navi"/>
+        <activity android:name=".Activity.Weather" />
+        <activity android:name=".Activity.Weather1" />
+        <activity android:name=".Activity.Phone_Login" />
+        <activity android:name=".Activity.About" />
+        <activity android:name=".Activity.Settings" />
+
+    </application>
+
+</manifest>

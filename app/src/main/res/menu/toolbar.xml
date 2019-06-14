@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/WX"
+        android:title="卫星地图" />
+    <item
+        android:id="@+id/YJ"
+        android:title="夜间模式" />
+    <item
+        android:id="@+id/DH"
+        android:title="导航地图" />
+    <item
+        android:id="@+id/PT"
+        android:title="普通地图" />
+
+</menu>

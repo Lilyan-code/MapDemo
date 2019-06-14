@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_bus"
+            android:icon="@drawable/bus"
+            android:title="实时公交" />
+        <item
+            android:id="@+id/nav_lxdt"
+            android:icon="@drawable/lxdt"
+            android:title="离线地图" />
+        <item
+            android:id="@+id/nav_subway"
+            android:icon="@drawable/subway"
+            android:title="地铁线路图" />
+        <item
+            android:id="@+id/nav_shoucang"
+            android:icon="@drawable/shoucang"
+            android:title="收藏夹" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings"
+            android:title="设置" />
+        <item
+            android:id="@+id/nav_guanyu"
+            android:icon="@drawable/guanyu"
+            android:title="关于" />
+    </group>
+</menu>

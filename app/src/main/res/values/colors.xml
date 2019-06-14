@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#54CC38</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#ffffff</color>-->
+    <color name="primary">#54CC38</color>
+    <color name="primary_dark">#000000</color>
+    <color name="primary_light">#F8BBD0</color>
+    <color name="accent">#8BC34A</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#ffffff</color>
+    <color name="divider">#BDBDBD</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#ffffff</color>
+
+    <color name="gray">#ddd</color>
+
+    <color name="gary">#898989</color>
+    <color name="grey"> #ebebeb</color>
+    <color name="darkgrey">#C0C0C0</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#FF0000</color>
+    <color name="darkyellow">#FFCC33</color>
+
+    <color name="item_text_title_color">#cccccc</color>
+    <color name="item_text_title_bg">#F6F6F6</color>
+
+
+    <color name="blue">#4287FF</color>
+
+    <color name="color1">#fff</color>
+    <color name="color2">#f00</color>
+    <color name="color3">#FECD52</color>
+    <color name="color4">#145CB9</color>
+    <color name="color5">#21AE58</color>
+    <color name="video_gray">#aadddddd</color>
+    <color name="black">#222222</color>
+
+    <color name="alpha_black">#F2F6F8</color>
+    <color name="alpha_white">#49ffffff</color>
+    <color name="gray_white">#44cccccc</color>
+
+    <color name="act_background">#efefef</color>
+    <color name="phone_bg">#f6f6f6</color>
+    <color name="translucent">#66000000</color>
+
+    <color name="gray_black">#88000000</color>
+    <color name="soft_black">#cc000000</color>
+    <drawable name="transparent">#00000000</drawable>
+    <color name="transparent">#F2F6F8</color>
+
+    <color name="text_color_chengse">#FF8472</color>
+    <color name="text_color_lightblack">#959595</color>
+
+    <color name="load_more_color">#34E2CC</color>
+    <color name="text_color_2">#ff666666</color>
+
+
+</resources>

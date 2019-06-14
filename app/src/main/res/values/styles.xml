@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#dc37c414</item>
+        <item name="colorPrimaryDark">#000000</item>
+        <item name="colorAccent">#006400</item>
+    </style>
+
+    <!-- 线条 -->
+    <style name="common_line_gray_90">
+        <item name="android:background">#e5e5e5</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+    <style name="top_nav1">
+        <item name="android:background">#54CC38</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Mystyle" >
+        <item name="android:textColor">#00aaff</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Mystyle2">
+        <item name="android:textColor">#ed5a5a</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- 顶部导航 -->
+    <style name="top_nav">
+        <item name="android:background">#fff</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- 线条 -->
+    <style name="common_line_gray_91">
+        <item name="android:background">#C0C4C0</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+</resources>
